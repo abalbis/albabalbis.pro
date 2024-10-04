@@ -9,6 +9,6 @@ gulp.task("html", function () {
         basepath: "@file",
       })
     )
-    .pipe(gulp.dest("docs/dist"));
+    .pipe(gulp.dest("docs"));
 });
 gulp.task("default", gulp.series("html"));
