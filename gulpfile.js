@@ -1,9 +1,8 @@
 const gulp = require("gulp");
 const fileInclude = require("gulp-file-include");
-
 gulp.task("html", function () {
   return gulp
-    .src("docs/*.html")
+    .src(["src/index.html"])
     .pipe(
       fileInclude({
         prefix: "@@",
@@ -12,5 +11,4 @@ gulp.task("html", function () {
     )
     .pipe(gulp.dest("docs/dist"));
 });
-
 gulp.task("default", gulp.series("html"));
