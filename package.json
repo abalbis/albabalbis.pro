@@ -9,8 +9,12 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "browser-sync": "^3.0.3",
     "gulp": "^5.0.0",
+    "gulp-clean-css": "^4.3.0",
     "gulp-file-include": "^2.3.0",
-    "gulp-gh-pages": "^0.5.4"
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.79.4"
   }
 }
