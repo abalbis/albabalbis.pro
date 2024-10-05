@@ -16,10 +16,12 @@ gulp.task("compile", function () {
 });
 
 gulp.task("css", function () {
-  return gulp
+  gulp
     .src("src/styles/*.css")
     .pipe(cleanCSS({ compatibility: "ie8" }))
     .pipe(gulp.dest("dist/css"));
+
+  return gulp.src("src/fonts/**/*").pipe(gulp.dest("dist/fonts"));
 });
 
 gulp.task("copy", function () {
