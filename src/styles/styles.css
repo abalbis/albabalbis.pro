@@ -1,7 +1,23 @@
-body {
-    background-color: #2E2926;
+@font-face {
+    font-family: 'laquer';
+    src: url('fonts/laquer.ttf') format('truetype');
 }
-h2 {
+
+@font-face {
+    font-family: 'SfPro';
+    src: url('fonts/SfPro.otf') format('opentype');
+}
+
+body {
+    background-color: #010104;
+}
+h1 {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-family: 'laquer';
     text-align: center;
     color: #ef0195;
 }
