@@ -8,20 +8,12 @@
 </head>
 
 <body>
-    <div class="cursor">
     <div class="intro">
-        <div class="titleGlitch" title="ALBA BALBIS">
-            ALBA BALBIS
-        </div>
+    <div class="titleGlitch" title="ALBA BALBIS">
+        ALBA BALBIS
     </div>
 </div>
     <script>
-    const cursor = document.querySelector('.cursor');
-    document.addEventListener('mousemove', (e) => {
-        cursor.style.left = `${e.pageX}px`;
-        cursor.style.top = `${e.pageY}px`;
-    });
-
     document.querySelector('.titleGlitch').classList.remove('glitch-active');
     setTimeout(function () {
         document.querySelector('.titleGlitch').style.animation = 'glitch 1s linear infinite';
