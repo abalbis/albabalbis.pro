@@ -42,7 +42,8 @@ body {
     font-size: 8vw;
     color: var(--color-neon-pink);
     position: relative;
-    animation: glitch 1s linear infinite;
+    opacity: 1;
+    transition: opacity 0.7s ease-out;
 }
 
 @keyframes glitch {
@@ -65,7 +66,7 @@ body {
 }
 
 .titleGlitch:before {
-    animation: glitchTop 1s linear infinite;
+    animation: glitchTop 3s linear infinite;
 }
 
 @keyframes glitchTop {
@@ -81,7 +82,7 @@ body {
 }
 
 .titleGlitch:after {
-    animation: glitchBottom 1.5s linear infinite;
+    animation: glitchBottom 3s linear infinite;
 }
 
 @keyframes glitchBottom {
