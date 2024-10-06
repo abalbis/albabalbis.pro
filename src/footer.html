@@ -1,4 +1,5 @@
 <script>
+
     document.querySelector('.titleGlitch').classList.remove('glitch-active');
     setTimeout(function () {
         document.querySelector('.titleGlitch').style.animation = 'glitch 1s linear infinite';
@@ -6,9 +7,14 @@
 
     setTimeout(function () {
         document.querySelector('.titleGlitch').style.animation = 'none';
-    }, 6000); // (3s de espera + 3s de glitch = 6s)
+    }, 4500); // (3s de espera + 3s de glitch = 6s)
 
     setTimeout(function () {
-        document.querySelector('.titleGlitch').style.display = 'none';
-    }, 10000); // desaparece (3s espera + 3s run + 4s de espera = 10s)
+        //7.5s desaparece
+        document.getElementsByClassName("intro")[0].style.display = 'none';
+        const contenido = document.getElementById("contenido");
+        contenido.style.display = "block";
+        contenido.style.opacity = "1";
+    }, 7500);
+
 </script>

@@ -90,7 +90,7 @@ body {
 }
 
 .titleGlitch:before {
-    animation: glitchTop 3s linear infinite;
+    animation: glitchTop 2.5s linear infinite;
 }
 
 @keyframes glitchTop {
@@ -106,7 +106,7 @@ body {
 }
 
 .titleGlitch:after {
-    animation: glitchBottom 3s linear infinite;
+    animation: glitchBottom 2.5s linear infinite;
 }
 
 @keyframes glitchBottom {
@@ -121,7 +121,10 @@ body {
     }
 }
 
-p {
+#contenido {
     color: var(--color-white);
     font-family: 'sfPro-Regular';
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-in;
 }

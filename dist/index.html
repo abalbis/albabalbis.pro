@@ -13,7 +13,7 @@
         ALBA BALBIS
     </div>
 </div>
-<div>
+<div id="contenido">
     <p>La sostenibilidad es un concepto crucial en el mundo actual. Implica satisfacer nuestras necesidades sin
         comprometer la capacidad de las futuras generaciones para satisfacer las suyas. A medida que enfrentamos
         desafíos como el cambio climático y la degradación ambiental, es esencial adoptar prácticas sostenibles en
@@ -24,6 +24,7 @@
         todos.</p>
 </div>
     <script>
+
     document.querySelector('.titleGlitch').classList.remove('glitch-active');
     setTimeout(function () {
         document.querySelector('.titleGlitch').style.animation = 'glitch 1s linear infinite';
@@ -31,11 +32,17 @@
 
     setTimeout(function () {
         document.querySelector('.titleGlitch').style.animation = 'none';
-    }, 6000); // (3s de espera + 3s de glitch = 6s)
+    }, 4500); // (3s de espera + 3s de glitch = 6s)
 
     setTimeout(function () {
-        document.querySelector('.titleGlitch').style.display = 'none';
-    }, 10000); // desaparece (3s espera + 3s run + 4s de espera = 10s)
+        //10s desaparece
+        document.getElementsByClassName("intro")[0].style.display = 'none';
+        console.log(document.getElementsByClassName("titleGlitch"))
+        const contenido = document.getElementById("contenido");
+        contenido.style.display = "block";
+        contenido.style.opacity = "1";
+    }, 7500);
+
 </script>
 </body>
 
