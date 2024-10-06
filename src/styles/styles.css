@@ -12,33 +12,33 @@
 
 @font-face {
     font-family: 'Lacquer';
-    src: url('fonts/Lacquer-Regular.woff2') format('woff2'), 
-         url('fonts/Lacquer-Regular.otf') format('opentype'),
-         url('fonts/Lacquer-Regular.ttf') format('truetype');
+    src: url('/fonts/Lacquer-Regular.woff2') format('woff2'), 
+         url('/fonts/Lacquer-Regular.otf') format('opentype'),
+         url('/fonts/Lacquer-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'sfPro-Regular';
-    src: url('fonts/sfPro-Regular.woff2') format('woff2'), 
-         url('fonts/sfPro-Regular.otf') format('opentype'),
-         url('fonts/sfPro-Regular.ttf') format('truetype');
+    src: url('/fonts/sfPro-Regular.woff2') format('woff2'), 
+         url('/fonts/sfPro-Regular.OTF') format('opentype'),
+         url('/fonts/sfPro-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'sfPro-Medium';
-    src: url('fonts/sfPro-Medium.woff2') format('woff2'), 
-         url('fonts/sfPro-Medium.otf') format('opentype'),
-         url('fonts/sfPro-Medium.ttf') format('truetype');
+    src: url('/fonts/sfPro-Medium.woff2') format('woff2'), 
+         url('/fonts/sfPro-Medium.OTF') format('opentype'),
+         url('/fonts/sfPro-Medium.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'sfPro-Bold';
-    src: url('fonts/sfPro-Bold.woff2') format('woff2'), 
-         url('fonts/sfPro-Bold.otf') format('opentype'),
-         url('fonts/sfPro-Bold.ttf') format('truetype');
+    src: url('/fonts/sfPro-Bold.woff2') format('woff2'), 
+         url('/fonts/sfPro-Bold.OTF') format('opentype'),
+         url('/fonts/sfPro-Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -46,7 +46,6 @@ body {
     margin: 0;
     height: 100vh;
     background-color: var(--color-black);
-    font-family: 'sfPro-Regular';
 }
 
 .intro {
@@ -122,9 +121,64 @@ body {
 }
 
 #contenido {
-    color: var(--color-white);
-    font-family: 'sfPro-Regular';
     display: none;
     opacity: 0;
     transition: opacity 1s ease-in;
+}
+
+
+
+
+.container {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 600px) 200px;
+    gap: 64px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    margin-left: 128px;
+    margin-right: 128px;
+}
+
+.card1 {
+    background-color: lightgray;
+    border-radius: 8px;
+}
+.card2 {
+    background-color: lightgray;
+    border-radius: 8px;
+}
+.card3 {
+    background-color: lightgray;
+    border-radius: 8px;
+}
+.card4 {
+    background-color: lightgray;
+    border-radius: 8px;
+}
+.card5 {
+    background-color: lightgray;
+    border-radius: 8px;
+}
+.card6 {
+    background-color: lightgray;
+    border-radius: 8px;
+}
+.card7 {
+    background-color: lightgray;
+    border-radius: 8px;
+}
+.card8 {
+    background-color: lightgray;
+    border-radius: 8px;
+}
+
+img.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: auto;
+    opacity: 0.7;
 }
