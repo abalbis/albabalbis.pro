@@ -128,57 +128,73 @@ body {
 
 
 
-
 .container {
     display: grid;
     min-height: 100vh;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(7, 600px) 200px;
+    grid-template-rows: repeat(7, 600px);
     gap: 64px;
     margin-top: 64px;
     margin-bottom: 64px;
-    margin-left: 128px;
-    margin-right: 128px;
+    margin-left: 160px;
+    margin-right: 160px;
+}
+
+.containerFooter {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px;
 }
 
 .card1 {
-    background-color: lightgray;
+    background-color: var(--color-gray);
     border-radius: 8px;
 }
 .card2 {
-    background-color: lightgray;
+    background-color: var(--color-gray);
     border-radius: 8px;
 }
 .card3 {
-    background-color: lightgray;
+    background-color: var(--color-gray);
     border-radius: 8px;
 }
 .card4 {
-    background-color: lightgray;
+    background-color: var(--color-gray);
     border-radius: 8px;
 }
 .card5 {
-    background-color: lightgray;
+    background-color: var(--color-gray);
     border-radius: 8px;
 }
 .card6 {
-    background-color: lightgray;
+    background-color: var(--color-gray);
     border-radius: 8px;
 }
 .card7 {
-    background-color: lightgray;
+    background-color: var(--color-gray);
     border-radius: 8px;
 }
-.card8 {
-    background-color: lightgray;
-    border-radius: 8px;
+.footer {
+    background-color: var(--color-gray);
 }
 
-img.overlay {
+.desplegableBoton {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 200px;
-    height: auto;
-    opacity: 0.7;
+    left: 30px;
+    bottom: -10px;
+    width: 100px;
+    height: 100px;
+    z-index: 333;
+    position: fixed;
+    margin-top: 32px;
+    margin-right: 32px;
+}
+
+.desplegableBoton img {
+    width: 90px;
+    height: 90px;
+}
+
+.desplegableBoton:hover {
+    background-color: blur;
 }

@@ -21,7 +21,10 @@ gulp.task("css", function () {
     .pipe(cleanCSS({ compatibility: "ie8" }))
     .pipe(gulp.dest("dist/css"));
 
-  return gulp.src("src/fonts/**/*").pipe(gulp.dest("dist/fonts"));
+  gulp.src("src/fonts/**/*", { encoding: false }).pipe(gulp.dest("dist/fonts"));
+  return gulp
+    .src("src/photos/**/*", { encoding: false })
+    .pipe(gulp.dest("dist/photos"));
 });
 
 gulp.task("copy", function () {
